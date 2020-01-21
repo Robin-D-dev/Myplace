@@ -1,0 +1,386 @@
+
+<!DOCTYPE html>
+
+<html lang="es-US">
+
+ 
+	<head>
+	  <title>Html5 new</title>
+
+          <meta charset="UTF-8">
+          <!-- <meta name="viewport" content="width=device-width,initial-scale=1.0;">-->
+          <meta http-equiv="refresh" content="60">
+          <!--<base href="http://www.gmail.com" target="_blank">-->
+           <link rel="stylesheet" type="text/css" href="css/css1.css">
+	  
+
+	</head>
+
+<body>
+
+  <div>
+<!--Header start-->
+	<header class="top" >
+                 
+                 <nav>
+                    <ul>
+                      <li><a href="#home" class="active">Home</a></li>
+                      <li><a href="#news">News</a></li>
+                      <li><a href="#contact">Contact</a></li>
+                      <li><a href="#about">About</a></li>
+                       <li><a href="https://www.aximsoft.com/" target="_blank">Our site</a></li>
+                      <li><a href="#bottom">Bottom</a></li>
+                    </ul>
+		              
+                
+    </nav>
+  </div>
+     <div>
+		<h1 id="b1">Aximsoft &reg;</h1>
+		<h3>Software Unit</h3>
+		<p>Some other details is here</p>
+    </div>    
+		
+	</header>
+<!--Header end-->
+		
+<!--Main section start-->
+
+<main>
+        <div class="sticky">
+            This is fixed positon element....
+        </div>
+       <div>
+            <iframe src="http://www.aximsoft.com" width="100%" height="300" style="border:none"></iframe>
+          
+        </div>
+	
+        <div>
+           <article>
+		
+	           <h2>Article 1</h2>
+
+	           <p>Html is used for web design .<wbr>The latest version of the html <wbr>is html5.2</p>
+	           <p>Html was developed by berners lee</p>
+	          <p draggable="true" >Aximsoft open at <time>9:00</time> every morning</p><br><br>
+      
+           </article>
+        </div>
+      
+
+ <!--Testing-->
+        <div>
+            <p>Value up to:60%<meter value="0.6"></meter></p>
+        </div>
+        <div>Hello World</div>
+        <div>This is &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a div element&lt;&gt;</div>
+	      <div class="cities village">
+               <h2>Chennai</h2>
+               <p>chennai is the capital of tamilnadu</p>
+        </div>
+             
+        <div class="cities">
+               <h2>Newdelhi</h2> 
+               <p>Newdelhi is the capital of india</p>
+        </div>
+	
+<!--Table start-->          
+         
+          <div class="flex-container">
+            <ul class="header row">
+              <li>Name</li>
+              <li>Designation</li>
+              <li>Doj</li>
+              <li>Blood Group</li>
+              <li>Contact</li>
+            </ul>
+            
+             <ul class="row">
+              <li>Robin</li>
+              <li>Developer</li>
+              <li>29/dec/2019</li>
+              <li>o+</li>
+              <li>8012412628</li>
+            </ul>
+           
+             <ul class="row">
+              <li>Sethu</li>
+              <li>Admin</li>
+              <li>29/dec/2019</li>
+              <li>B+</li>
+              <li>9876543210</li>
+            </ul>
+
+          </div>
+<!--Table end-->
+	<hr>
+	<br>
+	
+<!--form design start-->	
+          
+          <div class="container">
+ 
+              <form >
+                <fieldset>
+                  <legend>Application Form</legend>  
+                  <ul class="flex-outer">
+                   <li>
+	                   <label>Enter your name:</label>
+                      <input type="text" name="fname"  placeholder="Type your name here...." autocomplete="off">
+                  </li>
+                  <li>
+                    <label>Age : </label>
+                    <input type="number" min="0" max="100">
+                  </li>  
+
+                 <li>
+                   <label>Enter your mobile no:</label>
+                   <input type="number" name="fno">
+                </li>
+                <li>
+                  <label>Enter your email id:</label>
+                  <input type="email" name="fmail" autocomplete="off">
+               </li>
+        
+        
+               <li>
+                <label>Choose a number:</label>
+                <input list="browsers">
+                <datalist id="browsers">
+                 <option>one</option>
+                 <option>two</option>
+                 <option>three</option>
+                 <option>four</option>
+               </datalist>
+             </li>
+ 
+
+            <li>
+              <label>Qualification:</label>
+              <select name="qualify">
+                <option value="ug">ug</option>
+                <option value="pg" selected>pg</option>
+                <option value="dib">diplamo</option>
+                <option value="sslc">sslc</option>
+                <option value="other">others</option>
+          </select>
+           </li>        
+          
+           <li >
+                <label>Describe your skills:</label>
+                <textarea name="message" rows="5" cols="10" title="above 100 characters"></textarea>
+          </li>
+         
+          <li >        
+               <label>Upload resume:</label>
+               <input type="file" name="file1">
+          
+         </li> 
+
+
+
+<!--Inner flex-->
+    
+         <ul class="flex-inner">   
+          <li>
+         <p>Gender:</p>
+            <input class="rad" type="radio" name="gender" value="male" checked>male
+            <input class="rad" type="radio" name="gender" value="female" >female
+            <input class="rad" type="radio" name="gender" value="others">others
+          </li>
+         
+         
+          <li > 
+           <p>Languages known:</p>
+           <input type="checkbox" name="tam" value="Tamil" >
+            <span>Tamil</span>
+           <input type="checkbox" name="eng" value="English">
+           <span>English</span>
+           <input type="checkbox" name="mal" value="kanadam">
+            <span>Kannadam</span>
+            <input type="checkbox" name="kan" value="Malayalam">
+            <span>Malayalam</span>
+           <input type="checkbox" name="mal" value="Telugu">
+            <span>Telugu</span>
+          </li>    
+          </ul>  
+           <br><br>
+<!--Inner flex end-->  
+          <div class="button">
+          <button class="btn1 btn" type="submit"  ><p class="btn-text">Ok</p></button>
+          <button class="btn2 btn" type="reset" ><p class="btn-text">Reset</p></button>
+          </div>
+         </ul>
+       </fieldset>
+      </form>
+      </div>
+
+<!--Form design end-->
+
+
+<!--unorder list-->	
+      <div style="background-color: yellow;margin-right:200px;">
+	        <ul style="list-style-type:circle">
+	        <li>milk</li>			
+            <li>coffee</li>
+            <li>Tea</li>
+          </ul>
+      </div>
+ <!--unorder list end-->          
+
+<!--order list start-->
+      <div>
+          <ol start="20">
+            <li>India</li>
+            <li>America</li>
+            <li>cannada</li>
+          </ol>
+      </div>
+<!--order list end-->
+      <div>
+            <dl style="margin:0">
+              <dt>milk</dt>
+              <dd>-white cold drink</dd>
+            </dl>
+      </div>
+<!--list group start-->
+      <div>
+	      <select>
+         <optgroup label="fruits" >
+	      <option value="banana" >Banana</option>
+	      <option value="orange">Orange</option>
+	      <option value="apple">Apple</option>
+        </optgroup>
+ 
+  	    <optgroup label="animals">
+	      <option value="cat" >Cat</option>
+	      <option value="dog">Dog</option>
+	      <option value="cow" selected>Cow</option>
+        </optgroup>
+         </select>
+      </div>
+<!--list group end-->			
+      <div>
+	       <progress value="90" max="100"></progress>
+      </div>    
+
+<!--Graphics tag start-->
+      <div>
+        <h1>Graphics objects</h1>
+        <svg height="100" width="100">
+         <circle cx="50" cy="50" r="40"  stroke="green" stroke-width="10" fill="yellow"/>
+     
+        </svg>
+        <svg height="100" width="400">
+          <rect width="400" height="100" style="fill:rgb(0,0,255);stroke-width:10;stroke:rgb(255,255,255);">
+        </svg>
+ 
+        <svg height="140" width="400">
+          <rect x="50" y="20" rx="20" ry="20" height="150" width="150" style="fill:red;stroke:black;stroke-width=5;opacity:0.5"/>
+        </svg>
+      </div>
+
+<!--Graphics end-->
+
+<!--media objects-->
+           
+          
+          
+          <div>
+             <h1>media objects</h1>
+             <video width="600" height="400" controls >
+             <source src="media/mov_bbb.mp4" type="video/mp4">
+             Your browser not support the vedio tag
+             </video>
+          </div>
+             <audio controls>
+             <source src="media/horse.ogv" type="audio/ogg">
+             </audio>
+           </div>
+        <div>
+          <iframe width="600" height="400" src="http://www.youtube.com/embed/07d2dXHYb94?"></iframe>   
+         
+        </div>
+        <div >
+          <figure style="right: end" > 
+          <img src="images/dog.jpeg" class="doggy" alt="Little dog" width="604" height="394 " >
+	       <figcaption>
+	        fig:1 Little dog
+	       </figcaption>
+          <div>
+              <p>Part of caring for your dog is understanding his needs. When you need to know more about dog nutrition, health, 
+                  behavior or training, turn to Purina’s experts. In the below articles      you’ll          find all their best information and 
+                  tips so you can better care for your dog.</p>
+          </div>
+          </figure>
+        </div>
+
+<!--Banner Image start-->
+      <div>
+      <div class="banner" style="background-image:url('images/axim1.jpg')">
+        <div class="tri">
+           <p id="tri1" class="btn-text1">Aximsoft</p> 
+           <p id="tri2" class="btn-text1"><q>We Rise By Lifting Others</q></p>
+      </div>
+      </div>
+      </div>
+<!--Banner Image end-->
+        <div>
+          <figure>
+            <p>image map:</p>
+            <img src="images/workplace.jpg" alt="workplace image" usemap="#imap" >
+          </figure>
+        </div>
+
+        <div> 
+          <picture>
+            <source media="(min-width:1000px)" srcset="images/car2.jpeg">
+            <source media="(min-width:700px)" srcset="images/car1.jpg">
+            <img src="images/logo1.png">
+          </picture>
+         </div>
+         
+         <div>
+          <map name="imap">
+            <area shape="rect" coords="34,44,270,350" alt="computer" href="http://www.google.com" target="_blank">
+            <area shape="rect" coords="290,172,333,250" alt="phone" href="http://www.w3schools.com" target="_blank">
+            <area shape="circle" coords="337,300,44" alt="cup of coffee" href="http://www.aximsoft.com" target="_blank">
+
+          </map>
+            
+            <a  href="#b1">Jump to top</a><br></br>
+            <a href="http://www.aximsoft.com" target="iframe_a" style="text-decoration:none">www.aximsoft.com</a><br>
+            <iframe src="http://www.w3schools.com" name="iframe_a"></iframe>
+        </div>
+	      <div>
+          <p id="bottom"></p>
+        </div>
+   
+</main>
+
+<!--Main End-->
+
+<!--Footer section start-->
+  <div>
+	  <footer>
+      <p> Copy-rights by aximsoft 2019-2020</p>
+   	  <address>
+ 	          Aximsoft,
+            HD tech park,
+            Nava india,
+            Coimbatore
+	  </address>
+	  <details>
+	    <summary>Contact details is here..</summary>
+	      <p>Contact details<a href="robin.aeroapj@gmail.com"></a></p>
+        <p>Ph: 8012412628</p>
+    </details>
+	</footer>
+</div>
+<!--Footer Section End-->
+
+
+
+</body>
+
+</html>
