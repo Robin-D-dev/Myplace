@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <title>Bootstrap 4 exmple </title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="bootstrap-4/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css-main/main.css">
+  <script src="bootstrap-4/js/bootstrap.min.js"></script>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    
+  <style>
+
+     
+      @media only screen and (max-width: 767px){
+         .container-fluid{
+            margin: 0;
+            padding: 0;
+          
+         }
+        
+         .test12{
+            margin-left: 10px;
+         }
+         .text-cus{
+           color:darkorange;
+         }
+         .form-group-search{
+            margin-left: 15px;
+            margin-top: 20px;
+         }
+         
+         .brand-name{
+            font-size: 28px;
+            
+         }
+         .brand-quote{
+            margin: 40px;
+         }
+      }
+     
+     @media only screen and (max-width: 1024px){
+      .container-fluid{
+            margin: 0;
+            padding: 0;
+          
+         }
+        body{
+           background-color: blue;
+        }
+        .text-cus{
+           color:darkorange;
+         }
+
+         .form-group-search{
+          
+            bottom: 0;
+            border: 1px solid red;
+      
+         }
+         .test12{
+            margin-left: 10px;
+           
+         }
+        
+                 
+     }
+  </style>
+</head>
+<body>
+   <!--navigation bar start-->
+
+     
+     
+      <div class="container-fluid ">
+     
+            <nav class="navbar  bg-dark navbar-dark ">
+                  <div>
+                        
+                  <a class="navbar-brand" href="http://www.aximsoft.com">
+                    <img src="images/logo1.png" width="50px" height="50px" alt="Aximsoft">
+                  </a>
+                  <span class="text-cus brand-name">Aximsoft</span>
+                  </div>
+                  <div>
+                        <span class=" text-cus brand-quote">"We Rise By Lifting Others"</span>
+                        </div>
+                 
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#coll1"><span class="navbar-toggler-icon"></span></button>
+                  <div class="collapse navbar-collapse" id="coll1">
+                  <ul class="navbar-nav ">
+                     <li class="nav-item active"><a class="nav-link  text-warning" href="#">Home</a></li>
+                     <li class="nav-item dropdown "><a class="nav-link dropdown-toggle text-warning" data-toggle="dropdown" href="#">Product</span></a>
+                     <ul class="dropdown-menu">
+                        <li class="dropdown-item text-warning">Item1</li>
+                        <li class="dropdown-item text-warning">Item2</li>
+                        <li class="dropdown-item text-warning">Item3</li>
+                        <li class="dropdown-item text-warning">Item4</li>
+                        <li class="dropdown-item text-warning">Item5</li>
+                        </ul>
+                     </li>
+                     <li class="nav-item"><a class="nav-link text-warning" href="#">Service</a></li>
+                     <li class="nav-item"><a class="nav-link text-warning" href="#">Contact</a></li>
+                     <li class="nav-item"><a class="nav-link text-warning" href="#">About us</a></li>
+                  </ul>
+                  </div>
+                
+                  <form class="form-group d-flex form-group-search" >
+                        <input type="text" class="form-control" placeholder="search">
+                        <button type="button" class="btn btn-success test12">Search</button>
+                     </form>
+               </nav>
+               
+               <!--navigation bar end-->
+               <div class="row">
+                  <div class="col">
+                        <div class="carousel slide" id="mycarousel" data-ride="carousel"  >
+                              <!--Carousel indicators-->
+                                       <ol class="carousel-indicators">
+                                         <li data-target="#mycarousel" data-slide-to="0" class="active"></li>            
+                                         <li data-target="#mycarousel" data-slide-to="1" ></li>
+                                         <li data-target="#mycarousel" data-slide-to="2" ></li>
+                                        </ol>
+                              <!--Wrapper for slide-->          
+                                          <div class="carousel-inner">
+                                             <div class="carousel-item active">
+                                                <img src="images/apple.jpg" alt="aplle1 image" style="height: 600px;width: 100%">
+                                                <div class="carousel-caption"><h2>Steve jobs1</h2  ></div>
+                                             </div>
+                                             <div class="carousel-item">
+                                                   <img src="images/apple2.jpg" alt="aplle2 image" style="height: 600px;width: 100%">
+                                                   <div class="carousel-caption"><h4>Steve jobs2</h4></div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                      <img src="images/apple3.jpg" alt="aplle3 image" style="height: 600px;width: 100%">
+                                                      <div class="carousel-caption"><h4>Steve jobs3</h4></div>
+                                                   </div>
+                                          </div>
+                                      
+                                             <a class="carousel-control-prev" href="#mycarousel" data-slide="prev">
+                                               <span class="carousel-control-prev-icon"></span>
+                                             </a>
+                                             <a class="carousel-control-next" href="#mycarousel" data-slide="next">
+                                                   <span class="carousel-control-next-icon"></span>
+                                                </a>
+                                       </div>      
+                  
+                  </div>
+               </div>
+                  <!--Carousel caontainer-->
+<!--Row one start-->
+       
+      <div class="row">
+            <div class="col-sm-4" >
+               <div class="img-thumbnail">
+                   <a href="images/blue.jpeg" target="_blank" >
+                   <img src="images/blue.jpeg" alt="light" style="width:100%" >
+                   
+                  <div class="caption"><p>Lighting is a positive energy</p></div>
+
+                 </a>
+               </div>
+               <div>
+                   <p class="text-muted bg-danger ">Muted Text</p>
+                   <p class="text-white bg-primary">primary Text</p>
+                   <p class="text-success">succcess Text</p>
+                   <p class="text-info">Info Text</p>
+                   <p class="text-warning">Warning Text</p>
+                   <p class="text-dark">Dark Text</p>
+                   <p class="text-secondary">Secondary Text</p>
+               </div>
+
+               <div class="table-responsive ">
+                   <table class="table table-bordered table-striped table-hover ">
+                       <thead class="thead-dark">
+                           <th>Firstname</th>
+                           <th>Lastname</th>
+                           <th>Email</th>
+                           <th>Firstname</th>
+                           <th>Lastname</th>
+                           <th>Email</th>
+                           <th>Firstname</th>
+                           <th>Lastname</th>
+                           <th>Email</th>
+                           <th>Firstname</th>
+                           <th>Lastname</th>
+                           <th>Email</th>
+                           <th>Firstname</th>
+                           <th>Lastname</th>
+                           <th>Email</th>
+                       </thead>
+                       <tbody>
+                           <tr class="table-danger">
+                               <td>Robin</td>
+                               <td>Durairaj</td>
+                               <td>robin.aeroapj@gmail.com</td>
+                               <td>Robin</td>
+                               <td>Durairaj</td>
+                               <td>robin.aeroapj@gmail.com</td>
+                               <td>Robin</td>
+                               <td>Durairaj</td>
+                               <td>robin.aeroapj@gmail.com</td>
+                               <td>Robin</td>
+                               <td>Durairaj</td>
+                               <td>robin.aeroapj@gmail.com</td>
+                               <td>Robin</td>
+                               <td>Durairaj</td>
+                               <td>robin.aeroapj@gmail.com</td>
+                           </tr>
+                           <tr class="table-secondary">
+                               <td>Sethupathi</td>
+                               <td>Durairaj</td>
+                               <td>sethupathi255@gmail.com</td>
+                               <td>Robin</td>
+                               <td>Durairaj</td>
+                               <td>robin.aeroapj@gmail.com</td>
+                               <td>Robin</td>
+                               <td>Durairaj</td>
+                               <td>robin.aeroapj@gmail.com</td>
+                               <td>Robin</td>
+                               <td>Durairaj</td>
+                               <td>robin.aeroapj@gmail.com</td>
+                               <td>Robin</td>
+                               <td>Durairaj</td>
+                               <td>robin.aeroapj@gmail.com</td>
+                           </tr>
+                       </tbody>
+                   </table>
+               </div>
+              
+            </div>
+
+
+
+            <div class="col-sm-4" >
+               <div class="img-thumbnail">
+                  <a href="images/blue2.jpg" target="_blank">
+                  <img src="images/blue2.jpg" alt="digital" style="width:100%;">
+                  <div class="caption"><p>Digital computer</p></div>
+                  </a>
+
+                </div>
+
+            </div>
+
+
+
+
+             <div class="col-sm-4" >
+               <div class="img-thumbnail" >
+                 <a href="images/blue3.jpg" target="_blank">
+                 <img src="images/blue3.jpg" alt="lonely" width="100%" class="rounded-circle mx-auto d-block">
+                 <div class="caption">
+                      <p>be alone some moments </p>
+                 </div>
+
+                </a>
+               </div>
+               <div class="clearfix">
+                  <span class="border border-left-0 border-right-0 border-danger rounded-bottom float-lg-left">Float left</span>
+                  <span class="border border-left-0 border-right-0 border-danger rounded-bottom float-lg-right">Float Right</span>
+                  
+               </div>
+               <div class=" d-flex  justify-content-start shadow-lg bg-secondary p-2 m-2">
+                   <div class="p-2 bg-success">Flex1</div>
+                   <div class="p-2 bg-primary">Flex2</div>
+                   <div class="p-2 bg-warning ml-auto">Flex3</div>
+             </div>
+             <div class=" d-flex   justify-content-start shadow-lg bg-secondary p-2 m-2">
+               <div class="p-2 bg-success ">Flex1</div>
+               <div class="p-2 bg-primary">Flex2</div>
+               <div class="p-2 bg-warning flex-grow-1">Flex3</div>
+         </div>
+         <div class=" d-flex  justify-content-between shadow-lg bg-secondary p-2 m-2">
+            <div class="p-2 bg-success order-3 ">Flex1</div>
+            <div class="p-2 bg-primary order-1 ">Flex2</div>
+            <div class="p-2 bg-warning order-2">Flex3</div>
+      </div>
+      <div class=" d-flex   bg-secondary  align-items-stretch">
+         <div class=" border p-2 bg-success align-self-center">Flex1</div>
+         <div class=" border p-2 bg-primary align-self-start">Flex2</div>
+         <div class="border p-2 bg-warning align-self-end">Flex3</div>
+   </div>
+   
+            </div>
+       </div>  
+
+<!--Row one end-->
+
+          <div class="row">
+               <div class="col-sm-4">
+                  <div class="embed-responsive embed-responsive-16by9">
+                     <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/9pFolE4Y-84"></iframe>
+                  </div>
+                   
+                  
+               </div>
+               
+               <div class="col-sm-4">
+                    <div class="embed-responsive embed-responsive-16by9">
+                     <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/4uY4Pz0SuaM"></iframe>
+                  </div>
+               </div>
+               
+               <div class="col-sm-4">
+                   <div class="embed-responsive embed-responsive-16by9">
+                     <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Yscf0XivaLo"></iframe>
+                  </div>
+               </div>
+
+
+          </div>
+     
+     
+
+<!--Row Two end-->
+
+            <div class="row" id="sec1">
+                <div class="col-sm-4">
+                  <div class="jumbotron d-flex flex-wrap">
+                    <h1  >Jumbotron Box</h1>
+                    <p class="d-sm-flex flex-wrap">Bootstrap example 1</p>
+                    <p class="d-sm-flex flex-wrap">Bottstrap is a framework for css, html and js</p>
+                 </div>
+                </div>
+                <div class="col-sm-8">
+                   <div class="page-header">
+                     <h1>Bootstrap page header</h1>
+                   </div>
+                    <p>example of page header</p>
+                  <div class="d-inline-flex bg-primary">d-flex</div>
+                   <div class="d-sm-inline-flex bg-success">d-sm flex</div>
+                   <div class="d-md-inline-flex bg-success">d-md-flex</div>
+                   <div class="d-lg-inline-flex bg-success">d-lg-flex</div>
+                   <div class="d-xl-inline-flex bg-success">d-xl-flex</div>
+                
+                   <i class="fas fa-clock d-block">Clock icon</i>
+                   <i class="fas fa-cat d-block">Cat icon</i>
+                   <i class="fas fa-crow d-block">Crow icon</i>
+                   <i class="fas fa-frog d-block">frog icon</i>
+                </div>
+                
+              
+
+            </div>
+
+<!--Row three end-->
+              
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="alert alert-success">
+                  <strong>Success!</strong>alert.
+                </div>
+              </div>
+              <div class="col-sm-6">
+                 <div class="alert alert-danger">
+                    <strong>Info!</strong>alert box.
+                 </div>
+                 </div>
+               </div>
+            
+<!--Row four end-->
+            <div class="row" id="sec2">
+               <div class="col-sm-6">
+                 <div class="alert alert-info alert-dismissible">you should read
+                   <a href="#" class="close " data-dismiss="alert" label="close">&times;</a>
+                    Read this message
+                 </div>
+
+              </div>
+              <div class="col-sm-6">
+                 <div class="alert alert-dark alert-dismissible">you should read
+                   <a href="#" class="close " data-dismiss="alert" aria-label="close">&times;</a>
+                    Read this message
+                 </div>
+                 <div class="alert alert-secondary alert-dismissible">you should read
+                    <a href="#" class="close " data-dismiss="alert" aria-label="close">&times;</a>
+                     Read this message
+                  </div>
+
+              </div>
+             </div>
+<!--Row five end-->
+
+            <div class="row" >
+               <div class="col-md-6">
+
+                  <div>
+                     <button class="btn btn-success" type="button">Button1</button>
+                     <button class="btn btn-primary" type="button">Button1</button>
+                     <button class="btn btn-secondary" type="button">Button1</button>
+                     <button class="btn btn-danger" type="button">Button1</button>
+                     <button class="btn btn-info" type="button">Button1</button>
+                     <button class="btn btn-success" type="button">Button1</button>
+                     <button class="btn btn-primary" type="button">Button1</button>
+                     <button class="btn btn-secondary" type="button">Button1</button>
+                     <button class="btn btn-danger" type="button">Button1</button>
+                     <button class="btn btn-info" type="button">Button1</button>
+                  </div>
+                                
+                  <div>
+                   
+                    <ul class="list-group">
+                       <li class="group-item"><a href="#">News<span class="badge badge-primary">5</span></a></li>
+                       <li class="group-item"><a href="#">Comments<span class="badge badge-pill badge-danger">10</span></a></li>
+                   </ul>
+                     
+                    </div>
+
+                 <div class="btn-group-vertical">
+                    <button type="button" class="btn btn-outline-danger active">Dark btn<span class="badge  badge-success">7 </span></button>
+                     <button type="button" class="btn btn-outline-success "><span class="spinner-border spinner-border-sm text-danger"></span>Loading...</button>
+                     <button type="button" class="btn btn-outline-success disabled"><span class="spinner-grow spinner-grow-sm text-danger"></span>Loading...</button>
+                </div>
+
+            <div>
+               <h1> Collapsible example</h1>
+               <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#text1">info</button>
+
+               <div id="text1" class="collapse show">
+                   <p>It is an example for collapsible element.</p>
+                   <p>The text can be hide and show by cliking the button</p>
+
+               </div>
+
+
+            </div>
+
+            <div id="acco">
+            <div class="card">
+               <div class="card-header"><a class="card-link" data-toggle="collapse" href="#collapseone">Collapse-item</a></div>
+               <div class="collapse show" data-parent="#acco" id="collapseone">
+               <div class="card-body">Body text</div>
+               </div>
+               <div class="card-footer">Card footer</div>
+            </div>
+                       
+             <form action="#" class="was-validated" >
+               <div class="form-group">
+                  <label class="sr-only" for="email">E-mail</label><input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                  <div class="valid-feedback">valid</div>
+                     <div class="invalid-feedback">Please fill out all the fields</div>
+               </div>
+              
+               <div class="form-group">
+                     <label class="sr-only" for="pass">Password</label><input type="password" class="form-control" id="pass" placeholder="Enter your password" required>
+                     <div class="valid-feedback">valid</div>
+                     <div class="invalid-feedback">Please fill out all the fields</div>
+               </div>
+               <div class="custom-control custom-checkbox">
+                     <input type="checkbox" id="tam" value="" class="custom-control-input">
+                     <label  class="custom-control-label" for="tam">Tamil</label>
+               </div>
+               <div class="custom-control custom-checkbox">
+                     <input type="checkbox" id="eng" value="" class="custom-control-input">
+                     <label  class="custom-control-label" for="eng">English</label>
+               </div>
+               <div class="custom-control custom-checkbox">
+                     <input type="checkbox" id="mal" class="custom-control-input">
+                     <label for="mal"  class="custom-control-label">Malayalam</label>
+               </div>
+
+               <div class="form-group" style="margin: 10px 0">
+                  <label for="sel1">Select List:</label>
+                 <select class="custom-select" id="sel1">
+                     <option>--none--</option>
+                   <option>India</option>
+                   <option>Us</option>
+                   <option>Uk</option>
+                   <option>Australia</option>
+
+                 </select>
+
+               </div>
+               <button type="button" class="btn btn-primary" style="margin: 10px 0">Ok</button>
+
+
+             </form>
+
+             <form class="form-group" >
+                  <div class="input-group" style="margin: 10px 0">
+                    <div class="input-group-prepend">
+                       <span class="input-group-text">@</span></div>
+                     <input type="text" id="text1" class="form-control input-lg" placeholder="Email">
+                     
+                  </div>
+                  <div class="input-group " style="margin:10px 0" >
+                    <input type="password" id="text2" class="form-control input-sm" placeholder="password">
+                    <div class="input-group-append">
+                        <span class="input-group-text">Example text1</span>
+                     </div>
+                     <div class="input-group-append">
+                           <span class="input-group-text">Example text2</span>
+                        </div>
+                  </div>
+                  <div class="input-group " style="margin:10px 0">
+                        <div class="input-group-prepend">
+                              <span class="input-group-text">!</span></div>
+                     
+                     <input type="text"  placeholder="Additional info" class="form-control" >
+                  </div>
+                  
+                  <div class="input-group " style="margin:10px 0">
+                        <div class="input-group-prepend">
+                        <div class="input-group-text">
+                           <input type="checkbox">
+                        </div>     
+                        </div>
+                     
+                     <input type="text"  placeholder="Additional info" class="form-control" >
+                  </div>
+
+                  <div class="input-group input-group-lg" style="margin: 10px 0;">
+                        <div class="input-group-prepend">
+                              <span class="input-group-text">@</span></div>
+                     <input type="text" class="form-control " placeholder="search">
+                     <input type="text" class="form-control " placeholder="here">
+                     <div class="input-group-append">
+                   <button type="button" class="btn btn-danger btn-lg">Ok</button>
+                     </div>
+                  </div>
+
+                  <div class="custom-control custom-switch">
+                       <input type="checkbox" class="custom-control-input" id="mode">
+                       <label class="custom-control-label" for="mode">Sleeping mode(on/off)</label>
+                  </div>
+                 
+                  <div class="custom-control custom-radio">
+                     <input type="radio" class="custom-control-input" id="rad1">
+                     <label class="custom-control-label" for="rad1">Male</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="rad2">
+                        <label class="custom-control-label" for="rad2">Female</label>
+                     </div>
+                     <div class="custom-control custom-radio">
+                           <input type="radio" class="custom-control-input" id="rad3">
+                           <label class="custom-control-label" for="rad3">Others</label>
+                        </div>
+                     
+                      <div>
+                         <input type="range" class="custom-range"> 
+                      </div>
+                     <div class="custom-file">
+                        <label class="custom-file-label" for="file1">Choose File</label>
+                        <input type="file" class="custom-file-input" id="file1">
+
+                     </div>
+   
+
+             </form>
+
+             <div>
+                  <button type="button" class="btn btn-success btn-large" data-toggle="modal" data-target="#modal1"> Open Modal</button>
+                  <div id="modal1" class="modal fade"> 
+                     <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                           <div class="modal-header">
+                               <h4 class="modal-title"> Modal header</h4>
+                                    <button type="button" class="close" data-dismiss="modal"> &times; </button>
+                              
+                           </div>
+                           <div class="modal-body">
+                              <p>Some text in modal</p>
+                           </div>
+                           <div class="modal-footer">
+                              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+        
+        
+                 </div>
+                 <div>
+                     <h4>Tooltip plugin:</h4>
+                     <a  data-toggle="tooltip" title="Tooltip is working" data-placement="right">Hover me</a>
+                     
+                  </div>
+                  <div>
+                        <h4>Popover plugin:</h4>
+                         <button type="button"   data-trigger="focus" data-toggle="popover" class="btn btn-success btn-lg" data-placement="top" title="popover is working" data-content="some content inside the popover" >Click me</a>
+                     </div>
+        
+             </div>
+</div>
+<div class="col-md-6">
+                  
+ <div class="progress" style="height:30px;">
+ <div class="progress-bar progress-bar-success progress-bar-striped active" style="width:40%;height:30px;">
+         <span >70%</span>
+      </div>
+      
+</div>
+<div class="progress border">
+    <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width:40%;height:20px;">
+            <span >70%</span>
+         </div>
+         
+   </div>
+   
+
+    <div class="d-sm-inline-flex" >
+         <ul class="pagination justify-content-center ">
+               <li class="page-item active"><a class="page-link" href="#">Home</a></li>
+               <li class="page-item"><a class="page-link" href="#">Document1</a></li>
+               <li class="page-item"><a class="page-link" href="#">Document2</a></li>
+               <li class="page-item"><a class="page-link"href="#">Document3</a></li>
+            </ul>
+      
+   </div>
+
+   <div>
+    <ul class="breadcrumb">
+       <li class="breadcrumb-item active"><a href="#">Home</a></li>
+       <li class="breadcrumb-item"><a href="#">Document1</a></li>
+       <li class="breadcrumb-item"><a href="#">Document2</a></li>
+       <li class="breadcrumb-item"><a href="#">Document3</a></li>
+    </ul>
+    
+  </div>
+
+   <div>
+         <ul class="pager">
+               <li class="next"><a href="#">Next</a></li>
+               <li class="previous"><a href="#">Previous</a></li>
+            </ul>
+   </div>
+
+   <div>
+         <div class="list-group" style="width:50%;margin:10px 0;">
+               <a class=" list-group-item list-group-item-action active" >inbox</a>
+                  
+               <a class=" list-group-item list-group-item-action list-group-item-success justify-content-between d-flex" href="#">Draft<span class="badge badge-pill badge-primary">5</span></a>
+                                     
+               <a class=" list-group-item list-group-item-danger list-group-item-action justify-content-between" href="#">Spam</a>
+                </div>
+      
+   </div>
+  
+    <div class="card bg-danger text-success" style="width:50%;margin:10px 0;">
+       <div class="card-header">Card header</div>
+       <img class="card-img-top"src="images/flo1.jpg" alt="card image">
+       <div class="card-body">
+        <h4 class="card-title">Body title</h4>   
+        <p class="card-text">Body text on the card body</p>
+        <a class="card-link btn btn-info stretched-link" href="#">See people</a>
+        
+    </div>
+       <div class="card-footer"> Card Footer</div>
+   </div>
+   <div class="card bg-danger text-success" style="width:50%;margin:10px 0;">
+        <img class="card-img-top"src="images/flo1.jpg" alt="card image">
+        <div class="card-img-overlay">
+         <h4 class="card-title">Body title</h4>   
+         <p class="card-text">Body text on the card body</p>
+         <a class="card-link btn btn-info stretched-link" href="#">See people</a>
+         
+     </div>
+        <div class="card-footer"> Card Footer</div>
+    </div>
+  
+   <div class="dropdown dropright" style="margin:10px 0;">
+      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">menu<span class="caret"></span></button>
+
+      <ul class="dropdown-menu dropright ">
+         <li class="dropdown-item dropdown-header">Heading1</li>
+         <li class="dropdown-item"><a href="#">Item1</a></li>
+         <li class="dropdown-item"><a href="#">Item2</a></li>
+         <li class="divider"></li>
+         <li class="dropdown-item dropdown-header">Heading2</li>
+         <li class="dropdown-item"><a href="#">Item3</a></li>
+
+      </ul>
+   </div>
+   <div class="dropdown dropleft">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">menu<span class="caret"></span></button>
+  
+        <ul class="dropdown-menu dropdown-menu-right">
+           <li class="dropdown-header dropdown-item">Heading1</li>
+           <li class="dropdown-item"><a href="#">Item1</a></li>
+           <li class="dropdown-item"><a href="#">Item2</a></li>
+           <li class="divider"></li>
+           <li class="dropdown-header dropdown-item">Heading2</li>
+           <li class="dropdown-item"><a href="#">Item3</a></li>
+  
+        </ul>
+     </div>
+   
+               
+   <div class="media" id="sec3">
+      <div class="media-left  ">
+         <img src="images/apple3.jpg" alt="apple logo" class="media-object" style="width:80px">
+      </div>
+         <div class="media-body">
+         <h4 class="media-heading">Heading for media</h4>
+        <p> It is media body content with the text</p>
+        <div class="media">
+         <div class="media-left">
+            <img src="images/apple3.jpg" alt="apple logo" class="media-object" style="width:80px">
+         </div>
+         <div class="media-body">
+         <h4 class="media-heading">Heading for media</h4>
+        <p> It is media body content with the text</p>
+         </div>
+         
+         </div>
+         </div>
+        
+
+      </div>
+
+         
+    
+ </div>
+ </div>
+<!--Row six end-->
+
+<!--Java script-->
+  <script>
+     $(document).ready(function(){
+         $('[data-toggle="tooltip"]').tooltip();
+         $('[data-toggle="popover"]').popover();
+     });
+
+     
+  </script>
+<!--Javascript end-->
+
+
+
+
+</div>
+     
+</body>
+</html>
