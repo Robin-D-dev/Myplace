@@ -1,0 +1,94 @@
+body,html{
+  height:100%;
+}
+body{
+  background:url('Page.png') no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+
+}
+
+.heading1{
+  background-color: white;
+  color: #F05127;
+  font-size: 72px;
+  opacity: 0.8;
+  margin: auto;
+  width: 50%;
+  border-radius: 40px;
+
+}
+
+.container{
+  /* border: 1px solid skyblue; */
+  margin-top: 50px;
+}
+.date{
+  margin-top: 40px;
+  margin-left: 30px;
+  width: 300px;
+  box-sizing: border-box;
+  padding: 0px;
+}
+
+.ads{
+  border-left: 1px dashed #C4C4C4; 
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+}
+.day{
+  border-bottom: 2px solid red;
+  display:block;
+  width:230px;
+  font-size:80px;
+  color: #F05127;
+  text-align: right;
+  margin-left:50px;
+  padding-bottom: 5px !important;
+}
+
+.hr{
+  margin-left: 50px;
+}
+.hr,.min,.sec{
+  border-bottom: 2px solid red;
+  font-size: 40px;
+  color: #F05127;
+  margin-right: 17px;
+  width: 60px;
+  display:inline-block;
+  margin-top:30px;
+}
+
+
+.caption span{
+  display:inline-block;
+  margin-left: 50px;
+}
+
+.ads1{
+  margin-bottom: 25px;
+}
+
+#text1{
+  font-size: 16px;
+  text-align: justify;
+}
+
+#devices{
+  margin: auto;
+  width: 50%;
+}
+#days{
+  margin-left: 50px;
+}
+
+.add-contain{
+  margin-left: 100px;
+}
+#skip{
+  margin-left: 300px;
+  margin-top: 20px;
+}
